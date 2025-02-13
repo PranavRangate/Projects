@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Finder - Student Housing</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+   <header>
+    <div class="section-navbar" id="home">
+        <div class="container grid grid-two-cols">
+            <div class="img">
+                <img src="img/room-finder-logo-removebg-preview.png" alt="Room Finder Logo">
+            </div>
+            <button class="menu-toggle">Menu</button>
+            <div class="navbar-links">
+                <ul class="nav">
+                    <li class="item"> <a class="nav-link" href="#home">Home</a></li>
+                    <li class="item"> <a class="nav-link" href="#locations">Locations</a></li>
+                    <li class="item"> <a class="nav-link" href="#contact">Contact Us</a></li>
+                    <li class="item"> <a class="nav-link" href="#about">About Us</a></li>
+                    <li class="item"> <a class="nav-link signup-btn" href="https://ap-south-1vxchvvpag.auth.ap-south-1.amazoncognito.com/login/continue?client_id=3vgesu9j34nma5jj6fg13qc29i&redirect_uri=https%3A%2F%2Fdemobucket22uai103.s3.ap-south-1.amazonaws.com%2Findex.html&response_type=token&scope=email+openid+phone">Sign Up</a></li>
+                    <li class="item"> <a class="nav-link login-btn" href="https://ap-south-1vxchvvpag.auth.ap-south-1.amazoncognito.com/login/continue?client_id=3vgesu9j34nma5jj6fg13qc29i&redirect_uri=https%3A%2F%2Fdemobucket22uai103.s3.ap-south-1.amazonaws.com%2Findex.html&response_type=token&scope=email+openid+phone">Login</a></li>
+                   
+                
+                </ul>
+            </div>
+        </div>
+       
+    </div>
+   </header>
+ <!--main section  -->
+<main class="hero-section">
+    <div class="container grid">
+        <div class="hero-content">
+            <h1 class="hero-heading">Find Your Perfect Room: Affordable Living for Students and Professionals</h1>
+            
+            <!-- Add search section -->
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="text" placeholder="Enter location, property type, or keywords..." class="search-input">
+                    <button type="submit" class="search-button">Search</button>
+                </form>
+            </div>
+        </div>
+        <div class="hero-links">
+            <ul>
+                <li class="item"><a class="link" href="##">Room</a></li>
+                <li class="item"><a class="link" href="##">Roommates</a></li>
+                <li class="item"><a class="link" href="##">Flatmates</a></li>
+                <li class="item"><a class="link" href="##">Apartments</a></li>
+                <li class="item"><a class="link" href="##">Flat</a></li>
+                <li class="item"><a class="link" href="##">House</a></li>
+            </ul>
+        </div>
+    </div>
+</main>
+ <!-- main section end -->
+
+<!-- Featured Rooms Section -->
+<section class="featured-rooms">
+    <div class="container" id="avl_rooms">
+        <h2>Available Rooms</h2>
+        <div class="room-grid">
+            <!-- Single Rooms -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="img/Available Rooms/Single Room.jpg" alt="Single Room - Student Quarter">
+                    <span class="price">₹350/month</span>
+                </div>
+                <div class="room-info">
+                    <h3>Single Room in Student Quarter Snagli</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i>Walchand college area , Snagli</p>
+                    <div class="amenities">
+                        <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span><i class="fas fa-bed"></i> Single Bed</span>
+                        <span><i class="fas fa-bath"></i> Shared Bathroom</span>
+                        <span><i class="fas fa-utensils"></i> Shared Kitchen</span>
+                    </div>
+                    <button class="view-details" onclick="window.location.href='room_details/single-room.html'">View Details</button>
+                </div>
+            </div>
+
+            <!-- Double Room -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="img/Available Rooms/Double Room.jpg" alt="Double Room - Downtown">
+                    <span class="price">₹350/month</span>
+                </div>
+                <div class="room-info">
+                    <h3>Double Room in Ichalkaranji</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i>DKTE college, Ichalkaranji</p>
+                    <div class="amenities">
+                        <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span><i class="fas fa-bed"></i> Two Beds</span>
+                        <span><i class="fas fa-bath"></i> Private Bathroom</span>
+                        <span><i class="fas fa-utensils"></i> Shared Kitchen</span>
+                    </div>
+                    <button class="view-details" onclick="window.location.href='room_details/double-room.html'">View Details</button>
+                </div>
+            </div>
+
+            <!-- Studio Apartment -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="img/Available Rooms/Studio Apartment.jpg" alt="Studio Apartment - Harvard Square">
+                    <span class="price">₹750/month</span>
+                </div>
+                <div class="room-info">
+                    <h3>Studio Apartment near PVPIT college</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> PVPIT college</p>
+                    <div class="amenities">
+                        <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span><i class="fas fa-bed"></i> Queen Bed</span>
+                        <span><i class="fas fa-bath"></i> Private Bathroom</span>
+                        <span><i class="fas fa-kitchen-set"></i> Private Kitchen</span>
+                    </div>
+                    <button class="view-details" onclick="window.location.href='room_details/studio-apartment.html'">View Details</button>
+                </div>
+            </div>
+
+            <!-- Shared Room -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="img/Available Rooms/Shared Room.jpg" alt="Shared Room - Brookline">
+                    <span class="price">₹300/month</span>
+                </div>
+                <div class="room-info">
+                    <h3>Shared Room in KIT college area</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> KIT college area</p>
+                    <div class="amenities">
+                        <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span><i class="fas fa-bed"></i> Bunk Bed</span>
+                        <span><i class="fas fa-bath"></i> Shared Bathroom</span>
+                        <span><i class="fas fa-utensils"></i> Shared Kitchen</span>
+                    </div>
+                    <button class="view-details" onclick="window.location.href='room_details/shared-room.html'">View Details</button>
+                </div>
+            </div>
+
+            <!-- Luxury Single Room -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="img/Available Rooms/Luxury Single Room.jpg" alt="Luxury Single Room - Modern Design">
+                    <span class="price">₹600/month</span>
+                </div>
+                <div class="room-info">
+                    <h3>Luxury Single Room near Janta Bank, Ichalkaranji</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i> Janta Bank, Ichalkaranji</p>
+                    <div class="amenities">
+                        <span><i class="fas fa-lightbulb"></i> LED Ambient Lighting</span>
+                        <span><i class="fas fa-bed"></i> Premium Bedding</span>
+                        <span><i class="fas fa-chair"></i> Modern Furniture</span>
+                        <span><i class="fas fa-door-closed"></i> Built-in Wardrobe</span>
+                    </div>
+                    <button class="view-details" onclick="window.location.href='room_details/luxury-single-room.html'">View Details</button>
+                </div>
+            </div>
+
+            <!-- Economy Single -->
+            <div class="room-card">
+                <div class="room-image">
+                    <img src="img/Available Rooms/Economy Single Room.jpg" alt="Economy Single - Cambridge">
+                    <span class="price">₹400/month</span>
+                </div>
+                <div class="room-info">
+                    <h3>Economy Single Room near Industry area, Siroli</h3>
+                    <p class="location"><i class="fas fa-map-marker-alt"></i>Industry area, Siroli</p>
+                    <div class="amenities">
+                        <span><i class="fas fa-wifi"></i> Free WiFi</span>
+                        <span><i class="fas fa-bed"></i> Single Bed</span>
+                        <span><i class="fas fa-bath"></i> Shared Bathroom</span>
+                        <span><i class="fas fa-desk"></i> Work Desk</span>
+                    </div>
+                    <button class="view-details" onclick="window.location.href='room_details/economy-single-room.html'">View Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Find Rooms by Location Section (Moved here) -->
+<section class="locations-section" id="locations">
+    <div class="container">
+        <h2>Find Rooms by Location</h2>
+        <div class="location-search">
+            <input type="text" placeholder="Search location..." id="locationSearch">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="locations-grid">
+
+            <!--Ichalkaranji Areas -->
+            <div class="location-category">
+                <button onclick="window.location.href='Rooms by location/Ichalkaranji.html'"><h3>Ichalkaranji Areas</h3></button>
+                <div class="location-cards">
+                    
+                    <button onclick="window.location.href='rooms_by_area/DKTE_college.html'">
+                        <div class="location-card" data-location="DKTE college area">
+                            <img src="img/locations/DKTE_college_area.jpg " alt="DKTE college area">
+                            <div class="location-info">
+                                <h4>DKTE college area</h4>
+                                <p>20+ Rooms Available</p>
+                                <ul class="location-details">
+                                    <li><i class="fas fa-building"></i>Bajaj stationary</li>
+                                    <li><i class="fas fa-shopping-cart"></i> Shopping Centers</li>
+                                    <li><i class="fas fa-dollar-sign"></i> ₹500-₹800/month</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </button>
+                    
+                    <button onclick="window.location.href='rooms_by_area/Janta_Bank.html'">
+                    <div class="location-card" data-location="Janta Bank area">
+                        <img src="img/locations/Janta_bank_area.png" alt="Janta Bank area">
+                        <div class="location-info">
+                            <h4>Janta Bank area</h4>
+                            <p>15+ Rooms Available</p>
+                            <ul class="location-details">
+                                <li><i class="fas fa-theater-masks"></i> profectional</li>
+                                <li><i class="fas fa-glass-cheers"></i> sunrise</li>
+                                <li><i class="fas fa-dollar-sign"></i> ₹450-₹700/month</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </button>
+
+                </div>
+            </div>
+
+            <!-- Sangli Areas -->
+            <div class="location-category">
+                <button onclick="window.location.href='Rooms by location/Sangli.html'"><h3>Sangli Areas</h3></button>
+                <div class="location-cards">
+
+                    <button onclick="window.location.href='rooms_by_area/Walchand_college.html'">
+                    <div class="location-card" data-location="Walchand college Area">
+                        <img src="img/locations/Walchand_college.jpg" alt="Walchand college Area">
+                        <div class="location-info">
+                            <h4>Walchand college area</h4>
+                            <p>30+ Rooms Available</p>
+                            <ul class="location-details">
+                                <li><i class="fas fa-bus"></i> Near Public Transport</li>
+                                <li><i class="fas fa-utensils"></i> Campus Cafeteria</li>
+                                <li><i class="fas fa-dollar-sign"></i> ₹300-₹500/month</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </button>
+
+                    <button onclick="window.location.href='rooms_by_area/PVPIT_college.html'">
+                    <div class="location-card" data-location="PVPIT college area">
+                        <img src="img/locations/PVPIT_college_area.jpg" alt="PVPIT college area">
+                        <div class="location-info">
+                            <h4>PVPIT college area</h4>
+                            <p>25+ Rooms Available</p>
+                            <ul class="location-details">
+                                <li><i class="fas fa-subway"></i> Metro Station</li>
+                                <li><i class="fas fa-book"></i> Library Nearby</li>
+                                <li><i class="fas fa-dollar-sign"></i> ₹400-₹600/month</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </button>
+
+                </div>
+            </div>
+
+            
+
+            <!-- Kolhapur Areas -->
+            <div class="location-category">
+                <button onclick="window.location.href='Rooms by location/Kolhapur.html'"><h3>Kolhapur Areas</h3></button>
+                <div class="location-cards">
+
+                    <button onclick="window.location.href='rooms_by_area/KIT_college.html'">
+                    <div class="location-card" data-location="KIT college area">
+                        <img src="img/locations/KIT_college_area.jpg" alt="KIT college area">
+                        <div class="location-info">
+                            <h4>KIT college area</h4>
+                            <p>40+ Rooms Available</p>
+                            <ul class="location-details">
+                                <li><i class="fas fa-tree"></i> Peaceful Environment</li>
+                                <li><i class="fas fa-parking"></i> Free Parking</li>
+                                <li><i class="fas fa-dollar-sign"></i> ₹350-₹550/month</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </button>
+
+                    <button onclick="window.location.href='Industry_area_shiroli.html'">
+                    <div class="location-card" data-location="Industrial area, Shiroli">
+                        <img src="img/locations/Industrial_area_shiroli.jpg" alt="Industrial area, Shiroli">
+                        <div class="location-info">
+                            <h4>Industrial area, Shiroli</h4>
+                            <p>35+ Rooms Available</p>
+                            <ul class="location-details">
+                                <li><i class="fas fa-bicycle"></i> Bike-Friendly</li>
+                                <li><i class="fas fa-leaf"></i> Parks Nearby</li>
+                                <li><i class="fas fa-dollar-sign"></i> ₹400-₹600/month</li>
+                            </ul>
+                        </div>
+                    </div>
+                    </button>  
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works">  
+    <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps-grid">
+            <div class="step" data-step="1">
+                <i class="fas fa-search"></i>
+                <h3>Search</h3>
+                <p>Find your perfect room by location, price, or amenities</p>
+            </div>
+            <div class="step" data-step="2">
+                <i class="fas fa-home"></i>
+                <h3>Choose</h3>
+                <p>Select from our verified listings</p>
+            </div>
+            <div class="step" data-step="3">
+                <i class="fas fa-check-circle"></i>
+                <h3>Book</h3>
+                <p>Contact owner and secure your room</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section (Now after locations) -->
+<section class="testimonials">
+    <div class="container" id="user_review">
+        <h2>What Our Users Say</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <div class="user-image">
+                    <img src="img/users/user1.jpg" alt="John Doe">
+                </div>
+                <p class="quote">"Found my perfect room within a day. Great service!"</p>
+                <p class="user-name">- Saptarshi, Student</p>
+            </div>
+            
+            <div class="testimonial">
+                <div class="user-image">
+                    <img src="img/users/user2.jpg" alt="Jane Smith">
+                </div>
+                <p class="quote">"Very helpful platform for students looking for accommodation."</p>
+                <p class="user-name">- Yash, Graduate Student</p>
+            </div>
+            
+            <div class="testimonial">
+                <div class="user-image">
+                    <img src="img/users/user3.jpg" alt="Mike Johnson">
+                </div>
+                <p class="quote">"Easy to use and great customer support!"</p>
+                <p class="user-name">- Amay, Employee</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h3 class="question">How do I book a room?</h3>
+                <p class="answer">Simply search for your desired location, choose a room, and contact the owner through the provided contact information.</p>
+            </div>
+            <!-- Add more FAQ items -->
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Section -->
+<section class="newsletter">
+    <div class="container">
+        <h2>Stay Updated</h2>
+        <p>Subscribe to our newsletter for the latest room listings and special offers</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="statistics">
+    <div class="container">
+        <div class="stats-grid">
+            <button onclick="window.location.href='#avl_rooms'"><div class="stat-item">
+                <i class="fas fa-home"></i>
+                <h3>1000+</h3>
+                <p>Available Rooms</p>
+            </div></button>
+            <button onclick="window.location.href='#user_review'"><div class="stat-item">
+                <i class="fas fa-users"></i>
+                <h3>5000+</h3>
+                <p>Happy Tenants</p>
+            </div></button>
+            <button onclick="window.location.href='#locations'"><div class="stat-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>50+</h3>
+                <p>Locations</p>
+            </div></button>
+            <div class="stat-item">
+                <i class="fas fa-star"></i>
+                <h3>4.8/5</h3>
+                <p>Average Rating</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="ab" id="about">
+    <div class="c">
+        <h2>About Us</h2>
+        <p>Welcome to Room Finder, your go-to platform for finding the perfect accommodation. We are dedicated to helping students and young professionals find affordable and comfortable living spaces in the city.</p>
+        <p>Our team consists of experienced professionals who understand the challenges of finding a place to live. We strive to provide a user-friendly experience, offering a wide range of listings that cater to various needs and budgets.</p>
+        <p>At Room Finder, we believe that everyone deserves a place to call home. Our mission is to simplify the search process and connect you with the best options available.</p>
+        <p>Thank you for choosing Room Finder. We look forward to helping you find your next home!</p>
+        <p>At Room Finder, we believe that <span class="highlight">everyone deserves a place to call home</span>.</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h3>Our Location</h3>
+                        <p>123 Room Finder Street, Boston, MA 02108</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone Number</h3>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email Address</h3>
+                        <p>info@roomfinder.com</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2023 Room Finder. All rights reserved.</p>
+        <ul class="footer-links">
+            <li><a href="##">Privacy Policy</a></li>
+            <li><a href="##">Terms of Service</a></li>
+            <li><a href="##">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
