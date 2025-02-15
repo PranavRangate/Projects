@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economy Single Room near Industry area, Siroli</title>
+    <link rel="stylesheet" href="room-details.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Economy Single Room near Industry area, Siroli</h1>
+        <img src="Economy Single Room.jpg" alt="Economy Single Room.jpg" class="room-image">
+        <p><strong>Location:</strong>Industry area, Siroli</p>
+        <p><strong>Price:</strong> ₹400/month</p>
+        <p><strong>Amenities:</strong> Free WiFi, Single Bed, Shared Bathroom, Study Desk</p>
+        <p><strong>Description:</strong> Affordable single room in Cambridge. Includes study desk and basic amenities. Great for students focusing on academics.</p>
+        
+        <!-- Google Map Container -->
+        <div id="map"></div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Listings</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map and set its view to the desired location
+        var map = L.map('map').setView([42.3601, -71.0942], 15); // Coordinates for MIT Area
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // Add a marker to the map
+        L.marker([42.3601, -71.0942]).addTo(map) // Coordinates for MIT Area
+            .bindPopup('Single Room Location')
+            .openPopup();
+    </script>
+</body>
+</html> 

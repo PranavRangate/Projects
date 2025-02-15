@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Room in Ichalkaranji</title>
+    <link rel="stylesheet" href="room-details.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Double Room in Ichalkaranji</h1>
+        <img src="Double Room.jpg" alt="Double Room" class="room-image">
+        <p><strong>Location:</strong>DKTE college, Ichalkaranji</p>
+        <p><strong>Price:</strong> ₹500/month</p>
+        <p><strong>Amenities:</strong> Free WiFi, Two Beds, Private Bathroom, Shared Kitchen</p>
+        <p><strong>Description:</strong> Spacious double room in the heart of the Financial District. Perfect for students or young professionals who want to share.</p>
+        
+        <!-- Google Map Container -->
+        <div id="map"></div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Listings</button>
+    </div>
+
+    <!-- Google Maps API Script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVxQMCxzVEkDzR-GNia7oTC4sw6DtBtGY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            // The location of the single room
+            const roomLocation = { lat: 42.3601, lng: -71.0942 }; // Coordinates for MIT Area
+
+            // The map, centered at the room location
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: roomLocation,
+            });
+
+            // The marker, positioned at the room location
+            const marker = new google.maps.Marker({
+                position: roomLocation,
+                map: map,
+                title: "Double Room Location"
+            });
+        }
+    </script>
+</body>
+</html> 
