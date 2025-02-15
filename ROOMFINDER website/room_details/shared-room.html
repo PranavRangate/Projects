@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shared Room in KIT college area</title>
+    <link rel="stylesheet" href="room-details.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Shared Room in KIT college area</h1>
+        <img src="Shared Room.jpg" alt="Shared Room" class="room-image">
+        <p><strong>Location:</strong> KIT college area</p>
+        <p><strong>Price:</strong> ₹300/month</p>
+        <p><strong>Amenities:</strong> Free WiFi, Bunk Bed, Shared Bathroom, Shared Kitchen</p>
+        <p><strong>Description:</strong> Economic shared room in peaceful Brookline area. Great for students on a budget. Friendly roommates and welcoming environment.</p>
+        
+        <!-- Google Map Container -->
+        <div id="map"></div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Listings</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map and set its view to the desired location
+        var map = L.map('map').setView([42.3314, -71.1212], 15); // Coordinates for Brookline
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // Add a marker to the map
+        L.marker([42.3314, -71.1212]).addTo(map) // Coordinates for Brookline
+            .bindPopup('Shared Room Location')
+            .openPopup();
+    </script>
+</body>
+</html> 

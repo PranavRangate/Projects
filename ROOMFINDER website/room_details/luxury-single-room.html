@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Single Room near Janta Bank, Ichalkaranji</title>
+    <link rel="stylesheet" href="room-details.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Luxury Single Room near Janta Bank, Ichalkaranji</h1>
+        <img src="Luxury Single Room.jpg" alt="Luxury Single Room" class="room-image">
+        <p><strong>Location:</strong> Janta Bank, Ichalkaranji</p>
+        <p><strong>Price:</strong> ₹600/month</p>
+        <p><strong>Amenities:</strong> LED Ambient Lighting, Premium Bedding, Modern Furniture, Built-in Wardrobe</p>
+        <p><strong>Description:</strong> Modern luxury single room featuring ambient LED lighting, premium furnishings, and built-in storage. Perfect for students who appreciate premium living space.</p>
+        
+        <!-- Google Map Container -->
+        <div id="map"></div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Listings</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map and set its view to the desired location
+        var map = L.map('map').setView([16.719518408826456, 74.44090496899157], 15); // Coordinates for Theater District
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // Add a marker to the map
+        L.marker([16.719518408826456, 74.44090496899157]).addTo(map) // Coordinates for Theater District
+            .bindPopup('Luxury Single Room Location')
+            .openPopup();
+    </script>
+</body>
+</html> 
