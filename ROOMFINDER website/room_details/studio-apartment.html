@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Apartment near PVPIT college</title>
+    <link rel="stylesheet" href="room-details.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Studio Apartment near PVPIT college</h1>
+        <img src="Studio Apartment.jpg" alt="Studio Apartment" class="room-image">
+        <p><strong>Location:</strong> PVPIT college</p>
+        <p><strong>Price:</strong> ₹750/month</p>
+        <p><strong>Amenities:</strong> Free WiFi, Queen Bed, Private Bathroom, Private Kitchen</p>
+        <p><strong>Description:</strong> Modern studio apartment near Harvard Square. Fully furnished with private kitchen and bathroom. Perfect for those seeking independence.</p>
+        
+        <!-- Google Map Container -->
+        <div id="map"></div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Listings</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize the map and set its view to the desired location
+        var map = L.map('map').setView([42.373611, -71.118953], 15); // Coordinates for Harvard Square
+
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap'
+        }).addTo(map);
+
+        // Add a marker to the map
+        L.marker([42.373611, -71.118953]).addTo(map) // Coordinates for Harvard Square
+            .bindPopup('Studio Apartment Location')
+            .openPopup();
+    </script>
+</body>
+</html> 

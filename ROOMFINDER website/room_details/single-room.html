@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Room in Student Quarter Snagli</title>
+    <link rel="stylesheet" href="room-details.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Single Room in Student Quarter Snagli</h1>
+        <img src="Single Room.jpg" alt="Single Room" class="room-image">
+        <p><strong>Location:</strong>Walchand college area , Snagli</p>
+        <p><strong>Price:</strong> ₹350/month</p>
+        <p><strong>Amenities:</strong> Free WiFi, Single Bed, Shared Bathroom, Shared Kitchen</p>
+        <p><strong>Description:</strong> Cozy single room in a student-friendly environment. Located just 5 minutes walk from Walchand college. Ideal for students looking for affordable accommodation.</p>
+        
+        <!-- Google Map Container -->
+        <div id="map"></div>
+
+        <button class="back-button" onclick="window.history.back()">Back to Listings</button>
+    </div>
+
+    <!-- Google Maps API Script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVxQMCxzVEkDzR-GNia7oTC4sw6DtBtGY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+            // The location of the single room
+            const roomLocation = { lat: 42.3601, lng: -71.0942 }; // Coordinates for MIT Area
+
+            // The map, centered at the room location
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: roomLocation,
+            });
+
+            // The marker, positioned at the room location
+            const marker = new google.maps.Marker({
+                position: roomLocation,
+                map: map,
+                title: "Single Room Location"
+            });
+        }
+    </script>
+</body>
+</html> 
